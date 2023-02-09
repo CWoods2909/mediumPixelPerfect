@@ -7,12 +7,31 @@ h2{
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
+h4{
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h4:hover{
+    cursor: pointer;
+}
+
 a{
     text-decoration: none;
     color: black;
 }
 a:hover, button:hover{
     cursor: pointer;
+}
+
+.fire{
+    height: 30vw;
+    opacity: 0.5;
+}
+
+.nav_lower_container{
+    display: flex;
+    align-items: center;
 }
 
 #nav_container{
@@ -25,6 +44,7 @@ a:hover, button:hover{
 #nav_Container{
     background-color:  rgb(255, 196, 0);
     border-bottom: 1px solid black;
+    
 }
 
 #nav_left{
@@ -41,7 +61,7 @@ a:hover, button:hover{
 }
 
 #nav_lower{
-    height: 55vh;
+    height: 45vh;
     display: flex;
     flex-direction: column;
     width: fit-content;
@@ -69,4 +89,46 @@ a:hover, button:hover{
     background-color: black;
     color: white;
     border-radius: 50px;
+}
+
+#numbered_grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1%;
+    margin: 0 50px;
+
+}
+
+.grid{
+    display: flex;
+    flex-direction: column;
+    padding-left: 10%;
+    border-bottom: 1px solid black;
+}
+
+#grid_header{
+    margin-left: 5em ;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.grid_details{
+    color: grey;
+    font-size: 12px;
+}
+
+.author_header{
+    display: flex;
+    align-items: center;
+}
+
+.authors{
+    margin-left: 15px;
+}
+
+.numbers{
+    color: rgba(0, 0, 0, 0.374);
+    font-weight: bolder;
+    font-size: 30px;
 }
